@@ -31,10 +31,9 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>com.oracle.database.jdbc</groupId>
-			<artifactId>ojdbc8</artifactId>
-			<scope>runtime</scope>
+		 <dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -63,6 +62,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>spring-boot-mysql</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
