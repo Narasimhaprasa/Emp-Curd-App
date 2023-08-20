@@ -13,18 +13,17 @@ import javax.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name ="emp")
 @Data
-public class Employee implements Serializable {
+public class Employee {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer empno;
 
-	@Column(length = 20)
+
 	private String ename;
 
-	@Column(length = 20)
+	
 	private String job;
 	
 	private Float sal;
