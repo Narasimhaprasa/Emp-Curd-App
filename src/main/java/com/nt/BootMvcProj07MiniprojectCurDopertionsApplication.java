@@ -9,5 +9,11 @@ public class BootMvcProj07MiniprojectCurDopertionsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BootMvcProj07MiniprojectCurDopertionsApplication.class, args);
 	}
+	
+	@Bean(name=“entityManagerFactory”)
+        public LocalSessionFactoryBean sessionFactory() {
+            LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
+             return sessionFactory;
+        }
 
 }
