@@ -18,8 +18,7 @@ import lombok.Data;
 public class Employee implements Serializable {
 	
 	@Id
-	@SequenceGenerator(name = "gen1", sequenceName = "EMP_ID_SEQ",allocationSize = 1,initialValue = 1)
-	@GeneratedValue(generator ="gen1", strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer empno;
 
 	@Column(length = 20)
